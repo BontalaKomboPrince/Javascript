@@ -40,14 +40,11 @@
 // }
 
 //Exercice : pyramide
-
-for (var i = 0; i < 5; i++) {
-  var star = "*";
-  if (i = 1) {
-    document.write(star + " <br> ");
-  } else if (i > 1) {
-      star = "**"
-      document.write(star + " <br> ");
+var rows = 5;
+for (var i = 1; i <= rows; i++) {
+  for (var j = 1; j <= i; j++) {
+      document.write("* ");
   }
-
+  document.write("<br/>");
+  // <br/> is used to pushe the content down to the next line.
 }
